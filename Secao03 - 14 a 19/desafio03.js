@@ -75,7 +75,7 @@ pessoa.mostraIdade = function() {
 Crie um método chamado `mostrarPeso`, que retorne a frase:
 - "Eu peso [PESO]Kg."
 */
-pessoa.mestrarPeso = function() {
+pessoa.mostrarPeso = function() {
     return "Eu peso " + pessoa.peso + " Kg.";
 }
 
@@ -104,7 +104,7 @@ pessoa.mostraIdade(); // Olá! Eu tenho 24 anos!
 Qual o peso da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-pessoa.mestrarPeso(); //Eu peso 67Kg.
+pessoa.mostrarPeso(); //Eu peso 67Kg.
 
 /*
 Qual a altura da pessoa? (Use a instrução para responder e comentários
@@ -189,7 +189,7 @@ pessoa.apresentacao = function() {
         ano = "ano";
     }
 
-    if (pessoa.caminhouQuantosMetros <= 1) {
+    if (pessoa.caminhouQuantosMetros === 1) {
         metro = "metro";
     }
 
@@ -197,4 +197,4 @@ pessoa.apresentacao = function() {
 }
 
 // Agora, apresente-se ;)
-pessoa.apresentacao(); //Olá, eu sou a Behatris Fiorentini, tenho 24 anos, 1.64, meu peso é 67 e, só hoje, eu caminhei 30000 metros!
+pessoa.apresentacao(); //Olá, eu sou a Behatris Fiorentini, tenho 24 anos, 1.64, meu peso é 67 e, só hoje, eu caminhei 1600 metros!
