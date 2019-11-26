@@ -9,6 +9,8 @@ var soma = 15 + 8;
 
 // Atribua à variável `soma` todo o valor dela, somando 1, usando o operador de soma abreviado.
 soma += 1;
+//soma ++;
+//++soma;
 
 // Atribua à variável `soma` todo o valor dela, multiplicando por 3, usando o operador de multiplicação abreviado.
 soma *= 3;
@@ -38,3 +40,11 @@ function divisao(x, y) {
 
 // Invoque a função criada acima, passando os parâmetros 10 e 2.
 divisao(10, 2); //RESPOSTA =  2
+
+
+//EXEMPLO
+var um = 1;
+var dois = um++; //dois fica valendo 1, porque um++ é um pós incremento (eu atribuo o valor e depois somo) e a variável um fica valendo 2;
+
+var tres = 3;
+var quatro = ++3; //nesse caso, o quatro vai ser 4, porque eu somo e depois atrbuo e tres também vai ser 4;
