@@ -14,7 +14,7 @@ estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
 var teams = ["Flamengo", "Santos", "Palmeiras", "Grêmio", "Athetico-PR"];
-console.log( 'Times que estão participando do campeonato:', teams );
+console.log('Times que estão participando do campeonato:', teams);
 
 /*
 Crie uma função chamada `showTeamPosition` com as seguintes características:
@@ -33,9 +33,9 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     "Não temos a informação do time que está nessa posição."
 */
 
-function showTeamPosition(params) {
-     return (params < 6) ? ("O time que está em "+ (params) +"º lugar é o " + teams[params-1] + ".") :
-     ("Não temos a informação do time que está nessa posição.");
+function showTeamPosition(params, teams) {
+    return (params < 6) ? ("O time que está em " + (params) + "º lugar é o " + teams[params - 1] + ".") :
+        ("Não temos a informação do time que está nessa posição.");
 }
 
 /*
@@ -54,7 +54,7 @@ repetição "while".
 */
 var count = 19;
 
-while(++count <= 30){
+while (++count <= 30) {
     console.log(count);
 }
 
@@ -70,31 +70,36 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     a frase:
     "Não temos o equivalente hexadecimal para [COR]."
 */
-function convertToHex(cor){
-    switch(cor){
+
+function convertToHex(cor) {
+    var hexa;
+
+    switch (cor) {
         case 'red':
-        console.log('O hexadecimal para a cor ' + cor + ' é #FF0000.');
-        break;
+            hexa = '#FF0000';
+            break;
 
         case 'green':
-        console.log('O hexadecimal para a cor ' + cor + ' é #008000.');
-        break;
+            hexa = '#008000';
+            break;
 
         case 'pink':
-        console.log('O hexadecimal para a cor ' + cor + ' é #FFC0CB.');
-        break;
+            hexa = '#FFC0CB';
+            break;
 
         case 'black':
-        console.log('O hexadecimal para a cor ' + cor + ' é #000000.');
-        break;
+            hexa = '#000000';
+            break;
 
         case 'purple':
-        console.log('O hexadecimal para a cor ' + cor + ' é #A020F0.');
-        break;
+            hexa = '#A020F0';
+            break;
 
         default:
-        console.log('Não temos hexadecimal par a cor ' + cor + '.');
+            return 'Não temos hexadecimal par a cor ' + cor + '.';
     }
+
+    return 'O hexadecimal para a cor ' + cor + ' é ' + hexa + '.';
 }
 
 /*
