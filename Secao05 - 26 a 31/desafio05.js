@@ -66,9 +66,7 @@ function book(nomeLivro){
         livro3: { quantidadePaginas: 159, autor: "Autor 03", editora: "Editora 03" }
     };
 
-        var retorno = nomeLivro ? objeto[nomeLivro] : objeto;
-
-    return retorno;
+    return nomeLivro ? objeto[nomeLivro] : objeto;
 }
 
 /*
