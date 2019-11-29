@@ -1,5 +1,5 @@
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-function soma(x, y){
+function soma(x, y) {
     return x + y;
 }
 
@@ -17,7 +17,7 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a strin
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-function funcao(){
+function funcao() {
     aux = 50;
     return "O valor da variável agora é " + aux;
 }
@@ -35,10 +35,10 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-function exercicio(x, y, z){
-    if(x && y && z){
+function exercicio(x, y, z) {
+    if (x && y && z) {
         return (x * y * z) + 2;
-    }else{
+    } else {
         return "Preencha todos os valores corretamente!";
     }
 }
@@ -73,22 +73,22 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 
-function retornaDados(x, y, z){
-    if(x && y && z){
+function retornaDados(x, y, z) {
+    if (x && y && z) {
         return (x + y) / z;
-    }else if(x && !y && !z){
+    } else if (x && !y && !z) {
         return x;
-    }else if(x && y && !z){
+    } else if (x && y && !z) {
         return x + y;
-    }else(!x && !y && !z){
+    } else(!x && !y && !z) {
         return false;
-    }else{
+    } else {
         return null;
     }
 
 
-// Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-retornaDados(); // false
-retornaDados(1); // 1
-retornaDados(1, 2); // 3
-retornaDados(1, 2, 3); // 1
+    // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
+    retornaDados(); // false
+    retornaDados(1); // 1
+    retornaDados(1, 2); // 3
+    retornaDados(1, 2, 3); // 1
