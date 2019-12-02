@@ -19,13 +19,16 @@
 * EXEMPLO: var every = arr.every(function(item) { return item < 5; }); --> O resultado será false 
 * Usado para testar itens do array, fazer verificações, onde se todos os elementos corresponderem a condição, retorna true; Testa todos os itens;
 
+
 * some() --> também recebe uma função, para comparar apenas alguns elementos. Se pelo menos um dos itens corresponderem a condição, ele retorna true.
 
 
 ###MAP, FILTER
 * arr.map() --> ele recebe uma função como parâmetro. Ele percorre todos os itens do array (assim como o foreach), que retona um array
 * PARÂMETROS DA FUNÇÃO: item, index e array;
+* O map ele vai retornar exatamente o que passar no return;
 * Faz uma instrução com os itens do array;  
 * Retorna um novo array, não modifica o original;
 
 * arr.filter() --> recebe uma function e os mesmos parâtros, mas filtra o resultado. Só vai trazer os itens que atendem a condição;
+* O filter vai retornar o item se a expressão dele for verdadeira.
